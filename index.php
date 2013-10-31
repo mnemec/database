@@ -45,8 +45,8 @@
     try {
         $name = $_POST['name'];
         $email = $_POST['email'];
-        $Company = $_POST['Company'];
         $date = date("Y-m-d");
+        $Company = $_POST['company'];
         // Insert data
         $sql_insert = "INSERT INTO registration_tbl (name, email, date, Company) 
                    VALUES (?,?,?,?)";
