@@ -17,7 +17,7 @@
 </head>
 <body>
 <h1>Register here!</h1>
-<p>Fill in your name and email address, then click <strong>Submit</strong> to register.</p>
+<p>Fill in your name, email address and company, then click <strong>Submit</strong> to register.</p>
 <form method="post" action="index.php" enctype="multipart/form-data" >
       Name  <input type="text" name="name" id="name"/></br>
       Email <input type="text" name="email" id="email"/></br>
@@ -53,8 +53,8 @@ $Company = $_POST['Company'];
         $stmt = $conn->prepare($sql_insert);
         $stmt->bindValue(1, $name);
         $stmt->bindValue(2, $email);
-$stmt ->vindValue(3, $Company);
-        $stmt->bindValue(4, $date);
+        $stmt ->vindValue(3, $date);
+        $stmt->bindValue(4, $Company);
         $stmt->execute();
     }
     catch(Exception $e) {
@@ -71,12 +71,12 @@ $stmt ->vindValue(3, $Company);
         echo "<table>";
         echo "<tr><th>Name</th>";
         echo "<th>Email</th>";
-    echo "<th>Company</th>;
+        echo "<th>Company</th>";
         echo "<th>Date</th></tr>";
         foreach($registrants as $registrant) {
             echo "<tr><td>".$registrant['name']."</td>";
             echo "<td>".$registrant['email']."</td>";
-    echo "<td>" .$registrant['email']."</td>;
+            echo "<td>" .$registrant['email']."</td>";
             echo "<td>".$registrant['date']."</td></tr>";
         }
         echo "</table>";
