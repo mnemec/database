@@ -23,6 +23,7 @@
       Email <input type="text" name="email" id="email"/></br>
       Company <input type="text" name="Company" id="Company"/></br>
       <input type="submit" name="submit" value="Submit" />
+
 </form>
 <?php
     // DB connection info
@@ -84,6 +85,10 @@
         echo "<h3>No one is currently registered.</h3>";
     }
 ?>
+
+<p> 
+  <button onclick = "location.href='search.php'"> Search Database </button>
+</p>
 </body>
 </html>
 
