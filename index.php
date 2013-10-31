@@ -71,13 +71,13 @@
         echo "<table>";
         echo "<tr><th>Name</th>";
         echo "<th>Email</th>";
-        echo "<th>Company</th>";
-        echo "<th>Date</th></tr>";
+        echo "<th>Date</th>";
+        echo "<th>Company</th></tr>";
         foreach($registrants as $registrant) {
             echo "<tr><td>".$registrant['name']."</td>";
             echo "<td>".$registrant['email']."</td>";
-            echo "<td>" .$registrant['Company']."</td>";
-            echo "<td>".$registrant['date']."</td></tr>";
+            echo "<td>" .$registrant['date']."</td>";
+            echo "<td>".$registrant['Company']."</td></tr>";
         }
         echo "</table>";
     } else {
