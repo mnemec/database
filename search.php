@@ -51,12 +51,12 @@
 			echo "<tr><th>Name</th>";
 			echo "<th>Email</th>";
 			echo "<th>Date</th>";
-			echo "<th>company_name</th></tr>";
+			echo "<th>Company</th></tr>";
 			foreach($registrants as $registrant) {
 				echo "<tr><td>".$registrant['name']."</td>";
 				echo "<td>".$registrant['email']."</td>";
 				echo "<td>".$registrant['date']."</td>";
-				echo "<td>".$registrant['company_name']."</td></tr>";
+				echo "<td>".$registrant['Company']."</td></tr>";
 			}
 			echo "</table>";
 		} else {
