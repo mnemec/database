@@ -4,7 +4,7 @@
 </head>
 <body>
 	<form method="post" action="search.php" enctype="multipart/form-data" >
-      Search word <input type="text" name="search" id="search_id"/></br>
+     SeRch word Search word <input type="text" name="search" id="search_id"/></br>
       <input type="submit" name="submit" value="search" />
 	</form>
 	
